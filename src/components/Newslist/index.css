@@ -1,0 +1,74 @@
+.news-list {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.news-list .news-item {
+  padding: .1rem;
+}
+
+.news-list .news-item img {
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.news-list .news-item .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: .25rem;
+  color: #999;
+  border-bottom: .01 solid #ededed;
+  font-size: .12rem;
+}
+
+.news-list .news-item .info .author {
+  margin-right: .1rem;
+}
+
+.news-list .news-item .title {
+  padding: .05rem 0;
+  line-height: .2rem;
+}
+
+.news-list .news-item .title h1 {
+  font-size: .16rem;
+}
+
+.news-list .news-item.type-1 .main {
+  display: flex;
+  flex-direction: row;
+}
+
+.news-list .news-item.type-1 .main .pic {
+  flex: 1;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+.news-list .news-item.type-1 .main .title {
+  flex: 2;
+  padding-right: .1rem;
+  box-sizing: border-box;
+}
+
+.news-list .news-item.type-2 .pic, .news-list .news-item.type-3 .pic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news-list .news-item.type-2 .pic .img, .news-list .news-item.type-3 .pic .img {
+  width: 33.33%;
+  flex: 1 1 auto;
+  margin-right: .05rem;
+  background-color: #eee;
+  font-size: 0;
+}
+
+.news-list .news-item.type-2 .pic .img.last, .news-list .news-item.type-3 .pic .img.last {
+  margin: 0;
+}

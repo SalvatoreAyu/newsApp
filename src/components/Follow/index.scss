@@ -1,0 +1,41 @@
+.follow-outer {
+  position: fixed;
+  top: 0.1rem;
+  right: 0.15rem;
+  z-index: 3;
+  font-size: 0.22rem;
+  .follow {
+    &.icon-star-o {
+      color: #fff;
+    }
+    &.icon-star {
+      color: #f5d93c;
+    }
+  }
+}
+
+.follow-text-outer {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  // background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // display: none;
+  .followText {
+    background: #cf5f55b6;
+    color: #fff;
+    border: 0.08rem solid #cf5f5548;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    font-size: 0.2rem;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+}
